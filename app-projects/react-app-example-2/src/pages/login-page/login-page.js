@@ -19,9 +19,6 @@ export const LoginPage = () => {
   const [passwordValidation, setPasswordValidation] = React.useState('')
   const {onLoginSuccess, isAuth} = React.useContext(AuthContext)
 
-  console.log('isAuth', isAuth)
-  console.log('isFething', isFetching)
-
   const validateEmail = ({email}) => {
     if (!email) {
       setEmailValidation('The email is required')
